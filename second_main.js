@@ -16,13 +16,6 @@ submitButton.innerHTML = `select`;
 container.appendChild(inputCitu);
 container.appendChild(submitButton);
 
-// var inputValue = document.querySelector(".inp").value;
-
-console.log(container);
-console.log(inputCitu);
-console.log(submitButton);
-
-
 
 const appID = "280de99cfa9dd8422a7cd6220333136b"
 const units = "metric"
@@ -34,8 +27,6 @@ function actionInput(){
     submitButton.addEventListener("click", (e)=>{
         var valueOfInput = document.querySelector(".inp").value;
         var city = valueOfInput;
-
-        console.log(city)
         
         async function loadWeather(){    
 
@@ -91,10 +82,6 @@ function actionInput(){
         
     })
 }
-
-
-
-// const link = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + units + "&appid=" + appID;
 
 
 
